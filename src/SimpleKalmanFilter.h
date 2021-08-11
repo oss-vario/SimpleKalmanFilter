@@ -11,7 +11,7 @@ class SimpleKalmanFilter
 {
 
 public:
-  SimpleKalmanFilter(float mea_e, float est_e, float q);
+  SimpleKalmanFilter(float mea_e, float est_e, float q, float initial_value=0);
   float updateEstimate(float mea);
   void setMeasurementError(float mea_e);
   void setEstimateError(float est_e);
